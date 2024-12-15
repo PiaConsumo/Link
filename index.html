@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pia 2-A</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">LINK PROJECT</div>
+        <div class="nav">
+            <a href="home.html">Home</a>
+            <a href="About us.html">About us</a>
+            <a href="Product.html">Products</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+    </div>
+    <div id="container">
+        <div class="text">
+            <p>PROJECT</p>
+            <select id="linkSelect" class="link-select">
+                <option value="">Select a link</option>
+                <option value="https://functionalcalculatorpings.netlify.app/">Functional Calculator</option>
+                <option value="https://calculatortk-html.netlify.app/">Calculator TK</option>
+                <option value="https://midterm-project-html.netlify.app/">Midterm Project</option>
+                <option value="https://pingpong-html.netlify.app/">Ping Pong</option>
+                <option value="https://consumopiawebsite-html.netlify.app/">Consumopia Website</option>
+                <option value="https://signupandlogin2.netlify.app/">Signup and Login</option>
+            </select>
+            <button class="cta-button" onclick="openLink()">GO!</button>
+        </div>
+        <div class="self-info">
+            <h2>About Me</h2>
+            <p><strong>Name:</strong> Pia 2-A</p>
+            <p><strong>Age:</strong>  19</p>
+            <p><strong>Hobbies:</strong> Exploring New Projects</p>
+            <p><strong>Message:</strong> Welcome to my portfolio! Feel free to explore the links above to see some of my projects. Happy browsing!</p>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 Pia 2-A. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript function to open the selected link
+        function openLink() {
+            const select = document.getElementById('linkSelect');
+            const selectedLink = select.value;
+
+            if (selectedLink) {
+                window.open(selectedLink, '_blank'); // Open the link in a new tab
+            } else {
+                alert('Please select a link from the dropdown.'); // Alert if no link is selected
+            }
+        }
+    </script>
+</body>
+</html>
+
+<style>
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: white; 
+    color: blue;
+}
+
+.header {
+    background: linear-gradient(90deg, #007bff, #6610f2);
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 20px;
+    font-family: 'Georgia', serif;
+}
+
+.nav {
+    margin-right: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #ffc107;
+}
+
+
+#container {
+    text-align: center;
+    padding: 50px 20px;
+    min-height: 600px;
+}
+
+.text p {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #495057;
+}
+
+.link-select {
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    background-color: #fff;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #218838;
+}
+
+
+.self-info {
+    margin-top: 50px;
+    text-align: left;
+    background: pink;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    width: 80%;
+}
+
+.self-info h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #495057;
+}
+
+.self-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #495057;
+}
+
+footer {
+    background: #343a40;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    margin: 0;
+}
+</style>
